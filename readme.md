@@ -1,0 +1,52 @@
+// Disciplina   : [Introdução a Lógica da Programação]
+// Professor   : 
+// Descrição   : Encontrar o valor a ser pago ao funcionário vendedor do percentual dos valores vendidos no mês de acordo com seu tempo de casa, programa elaborado em C++
+// Autor(a)    : Gisele
+// Data atual  : 21/05/2019
+  #include <stdio.h>
+	#include <stdlib.h>
+	int main(void)
+	{
+	char nomevendedor;
+	float valm1, valm2, valm3, valcomissao, totalcomissao1, totalcomissao2, totalcomissao3;
+	int matriculavendedor, tempocasa;
+	printf("Digite a matricula do vendedor: ");
+	scanf("%d", &matriculavendedor);
+	
+	printf("Digite o nome do vendedor: ");
+	scanf("%s", &nomevendedor);
+	
+	printf("digite o tempo de casa do vendedor");
+	scanf ("%d", &tempocasa);
+	printf ("digite o valor do mes 1");
+	scanf ("%d",&valm1);
+	printf ("digite o valor do mes 2");
+	scanf ("%d",&valm2);
+	printf ("digite o valor do mes 3");
+	scanf ("%d",&valm3);
+	if(tempocasa >= 10)
+		{ totalcomissao1 = valm1 + 0.10;
+	totalcomissao2 = valm2 + 0.12;
+	totalcomissao3 = valm3 + 0.15;
+			printf("Os totais da comissao do meses sao\n");
+		printf("O total da comissao do mes 1 = %d\n", totalcomissao1);
+		printf("O total da comissao do mes 2 = %d\n", totalcomissao2);
+		printf("O total da comissao do mes 3 = %d\n", totalcomissao3);
+		}
+	else
+	{
+	totalcomissao1 = valm1 + 0.10;
+	totalcomissao2 = valm2 + 0.10;
+	totalcomissao3 = valm3 + 0.10;
+	
+printf("Os valores da comissao dos meses sao \n");
+		printf("O total da comissao do mes 1 = %d\n", totalcomissao1);
+		printf("O total da comissao do mes 2 = %d\n", totalcomissao2);
+		printf("O total da comissao do mes 3 = %d\n", totalcomissao3);
+	}
+	system("PAUSE");
+	return(0);
+	}
+
+	
+	
